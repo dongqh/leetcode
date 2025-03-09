@@ -5,6 +5,7 @@
  * Time complexity : O(n^2)
  * Space complexity: O(n)
 */
+
 int lengthOfLIS(vector<int>& nums) {
     vector<int> dp(nums.size(), 1);
     int res = 1;
@@ -20,3 +21,10 @@ int lengthOfLIS(vector<int>& nums) {
 
     return res;
 }
+
+// To do
+
+/*
+ * Solution 2
+ * Time complexity : O(n*logn)
+*/
