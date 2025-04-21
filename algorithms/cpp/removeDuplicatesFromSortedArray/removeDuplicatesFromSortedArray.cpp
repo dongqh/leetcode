@@ -14,13 +14,13 @@
  */
 
 int removeDuplicates(vector<int> &nums) {
-  int slow = 0, n = nums.size();
-  for (int i = 0; i < n; ++i) {
-    if (nums[i] != nums[slow]) {
-      nums[++slow] = nums[i];
+    int slow = 0, n = nums.size();
+    for (int i = 0; i < n; ++i) {
+        if (nums[i] != nums[slow]) {
+            nums[++slow] = nums[i];
+        }
     }
-  }
-  return nums.empty() ? 0 : (slow + 1);
+    return nums.empty() ? 0 : (slow + 1);
 }
 
 /**
@@ -33,15 +33,15 @@ int removeDuplicates(vector<int> &nums) {
  * understand.
  */
 int removeDuplicates(vector<int> &nums) {
-  int n = nums.size(), slow = 0, fast = 0;
-  while (fast < n) {
-    if (nums[fast] != nums[slow]) {
-      nums[++slow] = nums[fast++];
-    } else {
-      ++fast;
+    int n = nums.size(), slow = 0, fast = 0;
+    while (fast < n) {
+        if (nums[fast] != nums[slow]) {
+            nums[++slow] = nums[fast++];
+        } else {
+            ++fast;
+        }
     }
-  }
-  return nums.empty() ? 0 : (slow + 1);
+    return nums.empty() ? 0 : (slow + 1);
 }
 
 // Todo more solution
