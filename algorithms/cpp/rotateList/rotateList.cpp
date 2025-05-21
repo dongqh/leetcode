@@ -26,3 +26,5 @@ ListNode *rotateRight(ListNode *head, int k) {
     cur->next = nullptr;
     return newHead;
 }
+
+// Todo more solution
